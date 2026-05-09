@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student System</title>
+</head>
+<body>
+
+<h2>Enter Student Details</h2>
+
+<form action="Student" method="post">
+
+    Name: 
+    <input type="text" name="name" required>
+    <br><br>
+
+    Roll No: 
+    <input type="number" name="roll" required>
+    <br><br>
+
+    Advanced Java: 
+    <input type="number" name="adv_java" min="0" max="100" required>
+    <br><br>
+
+    Computer Networking: 
+    <input type="number" name="cn" min="0" max="100" required>
+    <br><br>
+
+    Unix: 
+    <input type="number" name="unix" min="0" max="100" required>
+    <br><br>
+
+    <input type="submit" value="Save">
+
+</form>
+
+<hr>
+
+<h2>Search Marksheet</h2>
+
+<form action="Student" method="get">
+
+    Roll No: 
+    <input type="number" name="searchRoll" required>
+
+    <input type="submit" value="Show">
+
+</form>
+
+</body>
+</html>
